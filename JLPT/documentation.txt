@@ -1,0 +1,11 @@
+Lesson Back-end devlopment:
+
+*I added a home button to the Hiragana page that allows you to go to the home.
+*I created a homepage where the user can select weather they do Hiragana or katakana.
+
+Lesson Occupational Specialism: 
+
+*I have created the katakana page with working katakana characters appearing, the user can now do both hiragana and katakana characters.
+*I have finished adding 3 boxes that allow people to choose what they would like to do i.e. look at the characters, Study, Vocab.
+*In addition I have added Kanji to the list so it's no longer just Hiragana and Katakana but now how Kanji as well.
+*Score no longer resets after pressing enter on a empty input box, before the score would reset and say incorrect if you enter a value of nothing.

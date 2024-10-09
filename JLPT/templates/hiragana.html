@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <script src="{{url_for('static', filename='script.js')}}" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{url_for('static', filename='favicon_io/favicon-32x32.png')}}">
+    <title>日本語能力試験</title>
+</head>
+<body>
+    <audio id="correct-sound">
+        <source src="correctanswer.mp3" type="audio/mpeg">
+        <source src="correctanswer.ogg" type="audio/ogg">
+    </audio>    
+    <div>
+        <a href="{{url_for('homepage')}}"><img src="/static/img/JapaneseHomeButton.png" alt="HomeIcon" id="homeButton"></a>
+    </div>
+    <div>
+        <p id="counter"></p>
+    </div>
+    <div>
+        <div id="everything-box" class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h1 id="display"></h1>
+                </div>
+                <div class="flip-card-back">
+                    <h2 id="backside-hiragana"></h2>
+                    <h4 id="backside-romaji"></h4>
+                    <!-- <p>The character</p> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div id="tooltip">Type your answer here!</div>
+            <input type="" placeholder="Enter Answer here." id="answer-box">
+        </div>
+        <div>
+            <p id="correctText"></p>
+            <p id="incorrectText"></p>
+        </div>
+        <!-- <div id="progress-bar">
+            <div id="progress"></div>
+        </div> -->
+        
+    </div>
+</body>
+</html>

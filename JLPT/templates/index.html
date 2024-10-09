@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+    <script src="{{url_for('static', filename='home.js')}}" defer></script>
+    <link rel="icon" href="{{url_for('static', filename='favicon_io/favicon-32x32.png')}}">
+    <title>日本語能力試験</title>
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+    <div id="mainDiv">
+        <div id="homeHeader">
+            <h1>日本語能力試験</h1>
+            <h3>JLPT</h3>
+        </div>
+
+        <div class="selectionBox">
+            <div id="charactersBox">
+                <h2>Characters</h2>
+                <!-- <h6>(Coming Soon!)</h6> -->
+                <img src="/static/img/YellowKanjiBook.png" alt="YellowKanjiBook" class="homeBooks">
+                <div id="btnDiv">
+                    <a class="kanaButton" id="characters" href="{{url_for('kanjiCharacters')}}">Kanji</a>
+                    <a class="kanaButton" id="characters" href="{{url_for('hiraganaCharacters')}}">Hiragana</a>
+                    <a class="kanaButton" id="katakanaButton" href="{{url_for('katakanaCharacters')}}">Katakana</a>
+                </div>
+            </div>
+
+            <div id="studyBox">
+                <h2>Study</h2>
+                <img src="/static/img/BlueStudyBook.png" alt="BlueStudyBook" class="homeBooks">
+                <div id="btnDiv">
+                    <a class="kanaButton" href="{{url_for('kanji')}}">Kanji</a>
+                    <a class="kanaButton" href="{{url_for('hiragana')}}">Hiragana</a>
+                    <a class="kanaButton" id="katakanaButton" href="{{url_for('katakana')}}">Katakana</a>
+                </div>
+            </div>
+
+            <div id="vocabBox">
+                <h2>Vocab</h2>
+                <img src="/static/img/GreenVocabBook.png" alt="GreenVocabBook" class="homeBooks">
+                <!-- <h6>(Coming Soon!)</h6> -->
+                <div id="btnDiv">
+                    <a class="kanaButton" href="{{url_for('kanji')}}">Kanji</a>
+                    <a class="kanaButton" href="{{url_for('hiragana')}}">Hiragana</a>
+                    <a class="kanaButton" id="katakanaButton" href="{{url_for('katakana')}}">Katakana</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Created by SenseiChromsome</p>
+    </footer>    
+</body>
+</html>

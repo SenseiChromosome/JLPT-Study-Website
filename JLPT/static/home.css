@@ -1,0 +1,190 @@
+body {
+    font-family: 'Noto Sans JP', 'Meiryo', 'Yu Gothic', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #1e1e1e, #121212);
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 1.5rem 0 0.5rem;
+    color: #fff;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.kanaButton {
+    text-align: center;
+    margin: 0;
+    background-color: #313131;
+    color: #FFFFFF;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #525252;
+}
+
+#btnDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.kanaButton {
+    margin-top: 1rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.kanaButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.selectionBox {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 29rem;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+#charactersBox {
+    background-color: #2D2D2D;
+    border: 2px solid #FFD700;
+    border-radius: 40px;
+    width: 25rem;
+    height: 25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+}
+
+#charactersBox h2 {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 3rem;
+    color: #FFD700;
+}
+
+#charactersBox h6 {
+    margin: 0;
+    font-size: 10px;
+    position: absolute;
+    top: 4.5rem;
+    right: 10rem;
+    color: #FFD700;
+}
+
+#charactersBox .kanaButton {
+    background-color: #4D4D4D;
+    border: 2px solid #FFD700;
+    color: #FFD700;
+}
+
+#studyBox {
+    background-color: #2D2D2D;
+    border: 2px solid #00BFFF;
+    border-radius: 40px;
+    width: 25rem;
+    height: 25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+}
+
+#studyBox h2 {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 3rem;
+    color: #00BFFF;
+}
+
+#studyBox .kanaButton {
+    background-color: #4D4D4D;
+    border: 2px solid #00BFFF;
+    color: #00BFFF;
+}
+
+#vocabBox {
+    background-color: #2D2D2D;
+    border: 2px solid #32CD32;
+    border-radius: 40px;
+    width: 25rem;
+    height: 25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+}
+
+#vocabBox h2 {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 3rem;
+    color: #32CD32;
+}
+
+#vocabBox h6 {
+    margin: 0;
+    font-size: 10px;
+    position: absolute;
+    top: 4.5rem;
+    right: 10rem;
+    color: #32CD32;
+}
+
+#vocabBox .kanaButton {
+    background-color: #4D4D4D;
+    border: 2px solid #32CD32;
+    color: #32CD32;
+}
+
+.homeBooks{
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 4.5rem;
+    right: 11rem;
+}
+
+footer {
+    text-align: center;
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #1E1E1E;
+}
+

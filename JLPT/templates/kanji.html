@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='characters.css')}}">
+    <script src="{{url_for('static', filename='home.js')}}" defer></script>
+    <link rel="icon" href="{{url_for('static', filename='favicon_io/favicon-32x32.png')}}">
+    <title>日本語能力試験</title>
+</head>
+<body>
+    <div>
+        <a href="{{url_for('homepage')}}"><img src="/static/img/JapaneseHomeButton.png" alt="HomeIcon" id="homeButton"></a>
+    </div>
+    <div id="mainDiv">
+        <div id="homeHeader">
+            <h1>漢字</h1>
+            <h3>Kanji</h3>
+        </div>
+</body>
+</html>
